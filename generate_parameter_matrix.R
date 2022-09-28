@@ -2,7 +2,7 @@
 library(tidyverse)
 
 ## Generate parameter settings
-params <- tibble(Sim = 1:5,
+params <- tibble(Scenario = 1:5,
                  n = 10 * (1:5),
                  lower = 1:5,
                  upper = 10 * (1:5)^2) %>%
