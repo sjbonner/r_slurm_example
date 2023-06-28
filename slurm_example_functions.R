@@ -5,7 +5,7 @@ simulation_wrapper <- function (params) {
   upper <- params$upper
 
   ## Run the simulation
-  r <- runif(params$n[id],params$lower[id],params$upper[id])
+  r <- runif(n, lower, upper)
 
   ## Return the results
   r
