@@ -18,4 +18,4 @@ results <- simulation_wrapper(params[id,])
 
 ## Save that number
 outfile <- paste0("Output/output_",params$Scenario[id],"_",params$Rep[id],".rds")
-saveRDS(r,outfile)
+saveRDS(results,outfile)
