@@ -25,11 +25,24 @@ You can find lots more information on how to create the shell script in the [htt
 
 ## Running the jobs
 
+### Eagle
+
+If you would like to run your simulation on eagle then please send me an e-mail and I will tell you how to access the server. You will then be able to login with ssh (or putty etc) using your UWO credentials and use sftp (or WinSCP or cyberduck etc) to copy your files back and forth.
+
+To run your simulation you would:
+1) Move to the directory containing your scripts (`cd ...`).
+2) Create the directories `Output` and `Logs` (`mkdir Output Logs`).
+3) Submit the job to the queue (`sbatch slurm_example_eagle.sh`). 
+
+If you want to check on the status of your job then you can use `squeue`. You can also terminate your job with `scancel`. You can find more details about using the slurm schedulre from the  DRA's webpage on [https://docs.alliancecan.ca/wiki/Running_jobs][Running Jobs]. 
+
+### Sharcnet
+
 To run the job you would log into on of the Digital Research Alliance of Canada systems which are listed [https://status.alliancecan.ca/](here). I tend to work with [https://docs.alliancecan.ca/wiki/Graham](Graham). If you have a [https://alliancecan.ca/en/membership/become-member](DRA Account) then you can login with ssh (or putty etc) and use sftp (or cyberduck etc) to copy your files across. 
 
 To run your simulation you would:
 1) Move to the directory containing your scripts (`cd ...`).
 2) Create the directories `Output` and `Logs` (`mkdir Output Logs`).
-3) Submit the job to the queue (`sbatch slurm_example.sh`). 
+3) Submit the job to the queue (`sbatch slurm_example_sharcnet.sh`). 
 
 If you want to check on the status of your job then you can use `squeue`. You can also terminate your job with `scancel`. More details are provided at the DRA's webpage on [https://docs.alliancecan.ca/wiki/Running_jobs][Running Jobs]. 
