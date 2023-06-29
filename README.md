@@ -1,6 +1,6 @@
 # Slurm with R
 
-The scripts in this repository illustrate how I tend to run simulations using the Slurm batch queue system on my local high performance computing cluster [www.sharcnet.ca](Sharcnet).
+The scripts in this repository illustrate how I tend to run simulations using the Slurm batch queue system on my local server or on the DRA high performance computing cluster [www.sharcnet.ca](Sharcnet).
 
 ## R Scripts
 
