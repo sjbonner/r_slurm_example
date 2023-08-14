@@ -31,8 +31,9 @@ If you would like to run your simulation on eagle then please send me an e-mail 
 
 To run your simulation you would:
 1) Move to the directory containing your scripts (`cd ...`).
-2) Create the directories `Output` and `Logs` (`mkdir Output Logs`).
-3) Submit the job to the queue (`sbatch slurm_example_eagle.sh`). 
+2) Create the file `parameter_matrix.csv` by running `Rscript --vanilla generate_parameter_matrix.R`.
+3) Initialize the directories `Output` and `Logs` (`mkdir Output Logs`).
+4) Submit the job to the queue (`sbatch slurm_example_eagle.sh`). 
 
 If you want to check on the status of your job then you can use `squeue`. You can also terminate your job with `scancel`. You can find more details about using the slurm schedulre from the  DRA's webpage on [https://docs.alliancecan.ca/wiki/Running_jobs][Running Jobs]. 
 
@@ -42,7 +43,8 @@ To run the job you would log into on of the Digital Research Alliance of Canada 
 
 To run your simulation you would:
 1) Move to the directory containing your scripts (`cd ...`).
-2) Create the directories `Output` and `Logs` (`mkdir Output Logs`).
-3) Submit the job to the queue (`sbatch slurm_example_sharcnet.sh`). 
+2) Create the file `parameter_matrix.csv` by running `Rscript --vanilla generate_parameter_matrix.R`.
+3) Initialize the directories `Output` and `Logs` (`mkdir Output Logs`).
+4) Submit the job to the queue (`sbatch slurm_example_sharcnet.sh`). 
 
 If you want to check on the status of your job then you can use `squeue`. You can also terminate your job with `scancel`. More details are provided at the DRA's webpage on [https://docs.alliancecan.ca/wiki/Running_jobs][Running Jobs]. 
